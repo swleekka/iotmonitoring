@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       menuId: "1",
-      footerText : "효림솔루션(주)"
+      footerText : "효림솔루션 주식회사"
     }
   },
   props: {
