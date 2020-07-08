@@ -2,19 +2,19 @@
   <div id="app">
     <!-- <img alt="Vue logo   <Login />" src="./assets/logo.png">    -->
     <!-- <MainPage/> -->
-    <Login />
+    <router-view></router-view>
   </div>
 </template>
 
 // <script>
-// import MainPage from './views/MainPage.vue'
-  import Login from  './views/Login.vue'
+// import MainPage from './components/MainPage.vue'
+  import Login from  './components/Login.vue'
 export default {
   name: 'App',
-  components: {
-      // MainPage,
-       Login
-  }
+  // components: {
+  //     // MainPage,
+  //      Login
+  // }
 }
 </script>
 

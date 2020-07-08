@@ -1,7 +1,7 @@
 <template>
     <div class="LoginWrap">
         <fieldset >
-            <legend class="login-title"> 로 그 인 </legend>
+            <legend class="login-title"> 로 그 인</legend>
 
             <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" 
                         label-width="80px" class="demo-ruleForm">
@@ -39,8 +39,8 @@
       };
       return {
         ruleForm: {
-          pass: '',
-          id: ''
+          pass: 'swlee',
+          id: '1111'
         },
         rules: {
           id: [
@@ -56,9 +56,11 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            alert('submit!');
+            //alert('submit!');
+             this.$router.push('/Main');
+            //this.$router.push({name: 'Main'});
           } else {
-            console.log('error submit!!');
+            console.log('login error submit!!');
             return false;
           }
         });

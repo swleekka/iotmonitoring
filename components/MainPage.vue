@@ -18,17 +18,17 @@
 
 <script>
 import TopMenu from '../components/TopMenu'
-import Menu1 from '../views/Menu1'
-import Menu2 from '../views/Menu2'
-import Menu3 from '../views/Menu3'
-import Login from '../views/Login'
+import Menu1 from '../components/Menu1'
+import Menu2 from '../components/Menu2'
+import Menu3 from '../components/Menu3'
+import Login from '../components/Login'
 
 export default {
   name: 'MainPage',
   data() {
     return {
       menuId: "1",
-      footerText : "한국토호 전자"
+      footerText : "효림솔루션"
     }
   },
   props: {
